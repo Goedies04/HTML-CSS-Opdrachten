@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+ 
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 10px;
+  text-align: center;
+}
+    div{
+        font-size: 10px
+    }
+    @media screen and (min-width: 700px){
+        .grid-container{ 
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr  1fr 1fr 1fr 1fr;
+            
+        }
+        .grid-container a{
+            display: none
+        }
+        .grid-container b{
+            display: none
+        }
+        @media screen and (max-width: 1500px){
+        .grid-container{ 
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .grid-container a{
+            display: none
+        }
+        .grid-container b{
+            display: none
+        }
+    }
+        @media screen and (max-width: 1000x){
+        .grid-container a{ 
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            
+            }
+            .grid-container{
+               display: grid;
+            }
+            .grid-container b{
+            display: none
+        }
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="grid-item" style="background-color: green">Home</div>
+  <div class="grid-item" style="background-color: yellow">Trainingen</div>
+  <div class="grid-item" style="background-color: red">Consultancy</div>  
+  <div class="grid-item" style="background-color: blue">Producten</div>
+  <div class="grid-item" style="background-color: green">Timeline</div>
+  <div class="grid-item" style="background-color: yellow">Herders</div>  
+  <div class="grid-item" style="background-color: red">Over Ons</div>
+  <div class="grid-item" style="background-color: blue">Contact</div>
+  
+</div>
+
+</body>
+</html>
