@@ -7,42 +7,35 @@
     <title>Document</title>
 </head>
 <style>
-*{
-    padding: 0;
-    margin: 0;
-    font-size: 100%;
-}
-
 .flex-container{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border: 3px solid red;
-    justify-content: space-evenly;
-    align-items: flex-end;
+    border: solid 10px;
+    justify-content: flex-start;
+   height: 500px;
+   width: 2000px;
+   
 }
 .flex_child{
-    border: 1px solid black;
-    flex-basis: 100px;
-    flex-shrink: 0;
-   border:dotted
+border: solid green 3px;
+width: 15px;
+
+line-height: 75px;
+font-size: 20px;
+flex-basis: 400px;
 }
-
-
-
 </style>
 <body>
     <div class="flex-container">
-        <div class="flex-item">1</div>
-        <div class="flex-item">2</div>
-        <div class="flex-item">3</div>
-        <div class="flex-item">4</div>
-        <div class="flex-item">5</div>
-        <div class="flex-item">6</div>
-        <div class="flex-item">7</div>
-        <div class="flex-item">8</div>
-        <div class="flex-item">9</div>
-        
-        </div>
+       <div class="flex_child">1</div>
+       <div class="flex_child">2</div>
+       <div class="flex_child">3</div>
+       <div class="flex_child">4</div>
+       <div class="flex_child">5</div>
+       <div class="flex_child">6</div>
+       <div class="flex_child">7</div>
+       <div class="flex_child">8</div>
+       <div class="flex_child">9</div>
+       <div class="flex_child">10</div>
+       </div>
 </body>
 </html>
