@@ -7,32 +7,35 @@
     <title>Document</title>
 </head>
 <style>
-*{
-    padding: 0;
-    margin: 0;   
+*{ 
     font-size: 100%;
 }
 
+
+
 .flex-container{
     display: flex;
-    height: 300px;
-    width: 400px;
-    
+    height: 250px;
+    width: 600px;
+   
     flex-direction: column;
     flex-wrap: wrap;
     border: 3px solid black;
-    align-items: stretch;
+    
 }
 .flex-item{
     display: flex;
     border: 1px dashed black;
-    flex-basis: 100px;
+    flex-basis: 123px;
     justify-content: center;
     align-items: center;
-    
+    flex-shrink: 0;
    
 }
 
+.e90{
+    margin: 0 30px 0 0;
+}
 .purple{
     background-color: purple;
 }
@@ -64,16 +67,16 @@ background-color: darkblue;
 </style>
 <body>
     <div class="flex-container">
-        <div class="flex-item purple">1</div>
-        <div class="flex-item blue">2</div>
+        <div class="flex-item purple r1">1</div>
+        <div class="flex-item blue r1">2</div>
         <div class="flex-item red">3</div>
         <div class="flex-item green">4</div>
         <div class="flex-item orange">5</div>
         <div class="flex-item pink">6</div>
         <div class="flex-item yellow">7</div>
         <div class="flex-item aqua">8</div>
-        <div class="flex-item egw">9</div>
-        <div class="flex-item purple">10</div>
+        <div class="flex-item egw e90">9</div>
+        <div class="flex-item purple e90">10</div>
         </div>
 </body>
 </html>
